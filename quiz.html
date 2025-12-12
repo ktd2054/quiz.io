@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SAL 1 MCQ Cram Quiz</title>
+  <title>SAL 1 MCQ Cram Quiz (150 Qs)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
@@ -29,10 +29,6 @@
       border-bottom: 1px solid #d0d7de;
       padding-bottom: 12px;
       margin-bottom: 18px;
-    }
-    h2 {
-      font-size: 20px;
-      margin-top: 24px;
     }
     p.intro {
       color: #57606a;
@@ -115,6 +111,7 @@
     #result {
       font-weight: 600;
       color: #24292f;
+      min-height: 24px;
     }
     @media (max-width: 600px) {
       .container {
@@ -135,15 +132,11 @@
   <div class="container">
     <h1>SAL 1 MCQ Cram Quiz</h1>
     <p class="intro">
-      100 quick-fire questions on core SOC L1 topics (CIA, logs, ports, incident response, etc.).
+      150 quick-fire questions on core SOC L1 topics (CIA, logs, ports, incident response, cloud, email, threat intel, etc.).
       Answer them, then click <strong>Check Answers</strong> to see your score.
     </p>
 
-    <!-- TIP: If you really want square checkboxes instead of circles,
-         change all input type="radio" to type="checkbox". -->
-
     <ol>
-
       <!-- 1–3: CIA, Least Privilege, Defence in Depth -->
       <div class="section-label">CIA, Least Privilege, Defence in Depth</div>
 
@@ -671,508 +664,1010 @@
         </div>
       </li>
 
+      <!-- 51–100: as in your file, plus Q75 changed -->
       <li class="question" data-correct="a">
-  <p>51. The primary goal of Defence in Depth is to:</p>
-  <div class="options">
-    <label><input type="radio" name="q51" value="a"> Use multiple layers of security controls to reduce overall risk</label>
-    <label><input type="radio" name="q51" value="b"> Replace all perimeter devices with AI</label>
-    <label><input type="radio" name="q51" value="c"> Create a single strong firewall</label>
-    <label><input type="radio" name="q51" value="d"> Focus only on endpoint protection</label>
-  </div>
-</li>
+        <p>51. The primary goal of Defence in Depth is to:</p>
+        <div class="options">
+          <label><input type="radio" name="q51" value="a"> Use multiple layers of security controls to reduce overall risk</label>
+          <label><input type="radio" name="q51" value="b"> Replace all perimeter devices with AI</label>
+          <label><input type="radio" name="q51" value="c"> Create a single strong firewall</label>
+          <label><input type="radio" name="q51" value="d"> Focus only on endpoint protection</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>52. A Threat is best defined as:</p>
-  <div class="options">
-    <label><input type="radio" name="q52" value="a"> A system weakness</label>
-    <label><input type="radio" name="q52" value="b"> A proof-of-concept exploit</label>
-    <label><input type="radio" name="q52" value="c"> Anything with potential to cause harm</label>
-    <label><input type="radio" name="q52" value="d"> A known CVE entry</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>52. A Threat is best defined as:</p>
+        <div class="options">
+          <label><input type="radio" name="q52" value="a"> A system weakness</label>
+          <label><input type="radio" name="q52" value="b"> A proof-of-concept exploit</label>
+          <label><input type="radio" name="q52" value="c"> Anything with potential to cause harm</label>
+          <label><input type="radio" name="q52" value="d"> A known CVE entry</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>53. Which protocol operates on TCP port 22?</p>
-  <div class="options">
-    <label><input type="radio" name="q53" value="a"> RDP</label>
-    <label><input type="radio" name="q53" value="b"> DNS</label>
-    <label><input type="radio" name="q53" value="c"> SMTP</label>
-    <label><input type="radio" name="q53" value="d"> SSH</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>53. Which protocol operates on TCP port 22?</p>
+        <div class="options">
+          <label><input type="radio" name="q53" value="a"> RDP</label>
+          <label><input type="radio" name="q53" value="b"> DNS</label>
+          <label><input type="radio" name="q53" value="c"> SMTP</label>
+          <label><input type="radio" name="q53" value="d"> SSH</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>54. Password spraying is different from brute-force because it:</p>
-  <div class="options">
-    <label><input type="radio" name="q54" value="a"> Tries all combinations for one user</label>
-    <label><input type="radio" name="q54" value="b"> Tries one common password across many users</label>
-    <label><input type="radio" name="q54" value="c"> Uses rainbow tables only</label>
-    <label><input type="radio" name="q54" value="d"> Requires MFA bypass</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>54. Password spraying is different from brute-force because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q54" value="a"> Tries all combinations for one user</label>
+          <label><input type="radio" name="q54" value="b"> Tries one common password across many users</label>
+          <label><input type="radio" name="q54" value="c"> Uses rainbow tables only</label>
+          <label><input type="radio" name="q54" value="d"> Requires MFA bypass</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>55. Spear-phishing is characterized by:</p>
-  <div class="options">
-    <label><input type="radio" name="q55" value="a"> Targeting a specific individual with tailored content</label>
-    <label><input type="radio" name="q55" value="b"> Sending bulk generic phishing emails</label>
-    <label><input type="radio" name="q55" value="c"> Focusing only on executives</label>
-    <label><input type="radio" name="q55" value="d"> Using only SMS messages</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>55. Spear-phishing is characterized by:</p>
+        <div class="options">
+          <label><input type="radio" name="q55" value="a"> Targeting a specific individual with tailored content</label>
+          <label><input type="radio" name="q55" value="b"> Sending bulk generic phishing emails</label>
+          <label><input type="radio" name="q55" value="c"> Focusing only on executives</label>
+          <label><input type="radio" name="q55" value="d"> Using only SMS messages</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>56. An IOC is:</p>
-  <div class="options">
-    <label><input type="radio" name="q56" value="a"> A long-term attacker tactic</label>
-    <label><input type="radio" name="q56" value="b"> A risk calculation formula</label>
-    <label><input type="radio" name="q56" value="c"> A known vulnerability</label>
-    <label><input type="radio" name="q56" value="d"> Observable evidence of malicious activity</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>56. An IOC is:</p>
+        <div class="options">
+          <label><input type="radio" name="q56" value="a"> A long-term attacker tactic</label>
+          <label><input type="radio" name="q56" value="b"> A risk calculation formula</label>
+          <label><input type="radio" name="q56" value="c"> A known vulnerability</label>
+          <label><input type="radio" name="q56" value="d"> Observable evidence of malicious activity</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>57. DNS typically uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q57" value="a"> 443</label>
-    <label><input type="radio" name="q57" value="b"> 25</label>
-    <label><input type="radio" name="q57" value="c"> 53</label>
-    <label><input type="radio" name="q57" value="d"> 3389</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>57. DNS typically uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q57" value="a"> 443</label>
+          <label><input type="radio" name="q57" value="b"> 25</label>
+          <label><input type="radio" name="q57" value="c"> 53</label>
+          <label><input type="radio" name="q57" value="d"> 3389</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>58. A SOC L1 analyst should escalate an alert when:</p>
-  <div class="options">
-    <label><input type="radio" name="q58" value="a"> They personally think it is boring</label>
-    <label><input type="radio" name="q58" value="b"> The event exceeds their scope or shows confirmed malicious activity</label>
-    <label><input type="radio" name="q58" value="c"> The ticket queue is full</label>
-    <label><input type="radio" name="q58" value="d"> They finish lunch</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>58. A SOC L1 analyst should escalate an alert when:</p>
+        <div class="options">
+          <label><input type="radio" name="q58" value="a"> They personally think it is boring</label>
+          <label><input type="radio" name="q58" value="b"> The event exceeds their scope or shows confirmed malicious activity</label>
+          <label><input type="radio" name="q58" value="c"> The ticket queue is full</label>
+          <label><input type="radio" name="q58" value="d"> They finish lunch</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>59. The "eradication" phase of incident response involves:</p>
-  <div class="options">
-    <label><input type="radio" name="q59" value="a"> Removing malware or attacker artifacts</label>
-    <label><input type="radio" name="q59" value="b"> Notifying legal teams</label>
-    <label><input type="radio" name="q59" value="c"> Writing post-incident summaries</label>
-    <label><input type="radio" name="q59" value="d"> Backing up clean systems</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>59. The "eradication" phase of incident response involves:</p>
+        <div class="options">
+          <label><input type="radio" name="q59" value="a"> Removing malware or attacker artifacts</label>
+          <label><input type="radio" name="q59" value="b"> Notifying legal teams</label>
+          <label><input type="radio" name="q59" value="c"> Writing post-incident summaries</label>
+          <label><input type="radio" name="q59" value="d"> Backing up clean systems</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>60. An exploit is:</p>
-  <div class="options">
-    <label><input type="radio" name="q60" value="a"> A firewall configuration</label>
-    <label><input type="radio" name="q60" value="b"> A generic risk metric</label>
-    <label><input type="radio" name="q60" value="c"> Code or technique used to take advantage of a vulnerability</label>
-    <label><input type="radio" name="q60" value="d"> A published threat intelligence report</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>60. An exploit is:</p>
+        <div class="options">
+          <label><input type="radio" name="q60" value="a"> A firewall configuration</label>
+          <label><input type="radio" name="q60" value="b"> A generic risk metric</label>
+          <label><input type="radio" name="q60" value="c"> Code or technique used to take advantage of a vulnerability</label>
+          <label><input type="radio" name="q60" value="d"> A published threat intelligence report</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>61. SMTP primarily uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q61" value="a"> 110</label>
-    <label><input type="radio" name="q61" value="b"> 143</label>
-    <label><input type="radio" name="q61" value="c"> 465</label>
-    <label><input type="radio" name="q61" value="d"> 25</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>61. SMTP primarily uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q61" value="a"> 110</label>
+          <label><input type="radio" name="q61" value="b"> 143</label>
+          <label><input type="radio" name="q61" value="c"> 465</label>
+          <label><input type="radio" name="q61" value="d"> 25</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>62. Proxy logs are typically used to detect:</p>
-  <div class="options">
-    <label><input type="radio" name="q62" value="a"> Suspicious outbound web activity</label>
-    <label><input type="radio" name="q62" value="b"> BIOS corruption</label>
-    <label><input type="radio" name="q62" value="c"> Internal network segmentation issues</label>
-    <label><input type="radio" name="q62" value="d"> Hardware failures</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>62. Proxy logs are typically used to detect:</p>
+        <div class="options">
+          <label><input type="radio" name="q62" value="a"> Suspicious outbound web activity</label>
+          <label><input type="radio" name="q62" value="b"> BIOS corruption</label>
+          <label><input type="radio" name="q62" value="c"> Internal network segmentation issues</label>
+          <label><input type="radio" name="q62" value="d"> Hardware failures</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>63. A SOAR platform is mainly used to:</p>
-  <div class="options">
-    <label><input type="radio" name="q63" value="a"> Patch operating systems</label>
-    <label><input type="radio" name="q63" value="b"> Perform long-term threat hunting only</label>
-    <label><input type="radio" name="q63" value="c"> Automate and orchestrate incident response workflows</label>
-    <label><input type="radio" name="q63" value="d"> Replace SIEM platforms entirely</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>63. A SOAR platform is mainly used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q63" value="a"> Patch operating systems</label>
+          <label><input type="radio" name="q63" value="b"> Perform long-term threat hunting only</label>
+          <label><input type="radio" name="q63" value="c"> Automate and orchestrate incident response workflows</label>
+          <label><input type="radio" name="q63" value="d"> Replace SIEM platforms entirely</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>64. SMB commonly uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q64" value="a"> 22</label>
-    <label><input type="radio" name="q64" value="b"> 445</label>
-    <label><input type="radio" name="q64" value="c"> 8080</label>
-    <label><input type="radio" name="q64" value="d"> 161</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>64. SMB commonly uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q64" value="a"> 22</label>
+          <label><input type="radio" name="q64" value="b"> 445</label>
+          <label><input type="radio" name="q64" value="c"> 8080</label>
+          <label><input type="radio" name="q64" value="d"> 161</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>65. A whaling attack targets:</p>
-  <div class="options">
-    <label><input type="radio" name="q65" value="a"> High-rank executives like CEOs/CFOs</label>
-    <label><input type="radio" name="q65" value="b"> Random individuals</label>
-    <label><input type="radio" name="q65" value="c"> Software developers only</label>
-    <label><input type="radio" name="q65" value="d"> Cloud tenants</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>65. A whaling attack targets:</p>
+        <div class="options">
+          <label><input type="radio" name="q65" value="a"> High-rank executives like CEOs/CFOs</label>
+          <label><input type="radio" name="q65" value="b"> Random individuals</label>
+          <label><input type="radio" name="q65" value="c"> Software developers only</label>
+          <label><input type="radio" name="q65" value="d"> Cloud tenants</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>66. Windows Security Event ID 4625 means:</p>
-  <div class="options">
-    <label><input type="radio" name="q66" value="a"> Account successfully logged in</label>
-    <label><input type="radio" name="q66" value="b"> Account created</label>
-    <label><input type="radio" name="q66" value="c"> Failed login attempt</label>
-    <label><input type="radio" name="q66" value="d"> Firewall blocked traffic</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>66. Windows Security Event ID 4625 means:</p>
+        <div class="options">
+          <label><input type="radio" name="q66" value="a"> Account successfully logged in</label>
+          <label><input type="radio" name="q66" value="b"> Account created</label>
+          <label><input type="radio" name="q66" value="c"> Failed login attempt</label>
+          <label><input type="radio" name="q66" value="d"> Firewall blocked traffic</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>67. Credential stuffing relies on:</p>
-  <div class="options">
-    <label><input type="radio" name="q67" value="a"> AI-generated passwords</label>
-    <label><input type="radio" name="q67" value="b"> Humans guessing passwords manually</label>
-    <label><input type="radio" name="q67" value="c"> Zero-day vulnerabilities</label>
-    <label><input type="radio" name="q67" value="d"> Reusing breached username/password pairs</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>67. Credential stuffing relies on:</p>
+        <div class="options">
+          <label><input type="radio" name="q67" value="a"> AI-generated passwords</label>
+          <label><input type="radio" name="q67" value="b"> Humans guessing passwords manually</label>
+          <label><input type="radio" name="q67" value="c"> Zero-day vulnerabilities</label>
+          <label><input type="radio" name="q67" value="d"> Reusing breached username/password pairs</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>68. The purpose of the containment phase is to:</p>
-  <div class="options">
-    <label><input type="radio" name="q68" value="a"> Limit the spread of an ongoing incident</label>
-    <label><input type="radio" name="q68" value="b"> Draft lessons learned</label>
-    <label><input type="radio" name="q68" value="c"> Identify vulnerabilities</label>
-    <label><input type="radio" name="q68" value="d"> Reboot systems</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>68. The purpose of the containment phase is to:</p>
+        <div class="options">
+          <label><input type="radio" name="q68" value="a"> Limit the spread of an ongoing incident</label>
+          <label><input type="radio" name="q68" value="b"> Draft lessons learned</label>
+          <label><input type="radio" name="q68" value="c"> Identify vulnerabilities</label>
+          <label><input type="radio" name="q68" value="d"> Reboot systems</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>69. EDR tools specialize in:</p>
-  <div class="options">
-    <label><input type="radio" name="q69" value="a"> Managing cloud billing</label>
-    <label><input type="radio" name="q69" value="b"> Filtering email content</label>
-    <label><input type="radio" name="q69" value="c"> Detecting, blocking, and responding to endpoint threats</label>
-    <label><input type="radio" name="q69" value="d"> Automating software development</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>69. EDR tools specialize in:</p>
+        <div class="options">
+          <label><input type="radio" name="q69" value="a"> Managing cloud billing</label>
+          <label><input type="radio" name="q69" value="b"> Filtering email content</label>
+          <label><input type="radio" name="q69" value="c"> Detecting, blocking, and responding to endpoint threats</label>
+          <label><input type="radio" name="q69" value="d"> Automating software development</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>70. RDP uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q70" value="a"> 22</label>
-    <label><input type="radio" name="q70" value="b"> 3389</label>
-    <label><input type="radio" name="q70" value="c"> 515</label>
-    <label><input type="radio" name="q70" value="d"> 80</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>70. RDP uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q70" value="a"> 22</label>
+          <label><input type="radio" name="q70" value="b"> 3389</label>
+          <label><input type="radio" name="q70" value="c"> 515</label>
+          <label><input type="radio" name="q70" value="d"> 80</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>71. A vulnerability is:</p>
-  <div class="options">
-    <label><input type="radio" name="q71" value="a"> A weakness in a system</label>
-    <label><input type="radio" name="q71" value="b"> A confirmed data breach</label>
-    <label><input type="radio" name="q71" value="c"> A type of exploit code</label>
-    <label><input type="radio" name="q71" value="d"> A proactive mitigation</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>71. A vulnerability is:</p>
+        <div class="options">
+          <label><input type="radio" name="q71" value="a"> A weakness in a system</label>
+          <label><input type="radio" name="q71" value="b"> A confirmed data breach</label>
+          <label><input type="radio" name="q71" value="c"> A type of exploit code</label>
+          <label><input type="radio" name="q71" value="d"> A proactive mitigation</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>72. A SIEM is primarily responsible for:</p>
-  <div class="options">
-    <label><input type="radio" name="q72" value="a"> Automating HR workflows</label>
-    <label><input type="radio" name="q72" value="b"> Providing endpoint antivirus</label>
-    <label><input type="radio" name="q72" value="c"> Centralizing, correlating, and alerting on security logs</label>
-    <label><input type="radio" name="q72" value="d"> Running backups</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>72. A SIEM is primarily responsible for:</p>
+        <div class="options">
+          <label><input type="radio" name="q72" value="a"> Automating HR workflows</label>
+          <label><input type="radio" name="q72" value="b"> Providing endpoint antivirus</label>
+          <label><input type="radio" name="q72" value="c"> Centralizing, correlating, and alerting on security logs</label>
+          <label><input type="radio" name="q72" value="d"> Running backups</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>73. DNS logs are helpful for spotting:</p>
-  <div class="options">
-    <label><input type="radio" name="q73" value="a"> CPU overclocking</label>
-    <label><input type="radio" name="q73" value="b"> Internal network latency</label>
-    <label><input type="radio" name="q73" value="c"> Printer issues</label>
-    <label><input type="radio" name="q73" value="d"> Domain lookups to suspicious or newly registered sites</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>73. DNS logs are helpful for spotting:</p>
+        <div class="options">
+          <label><input type="radio" name="q73" value="a"> CPU overclocking</label>
+          <label><input type="radio" name="q73" value="b"> Internal network latency</label>
+          <label><input type="radio" name="q73" value="c"> Printer issues</label>
+          <label><input type="radio" name="q73" value="d"> Domain lookups to suspicious or newly registered sites</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>74. Least privilege means:</p>
-  <div class="options">
-    <label><input type="radio" name="q74" value="a"> Giving users only the access they need to do their job</label>
-    <label><input type="radio" name="q74" value="b"> Giving users admin rights for flexibility</label>
-    <label><input type="radio" name="q74" value="c"> Denying all permissions by default</label>
-    <label><input type="radio" name="q74" value="d"> Assigning privileges randomly</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>74. Least privilege means:</p>
+        <div class="options">
+          <label><input type="radio" name="q74" value="a"> Giving users only the access they need to do their job</label>
+          <label><input type="radio" name="q74" value="b"> Giving users admin rights for flexibility</label>
+          <label><input type="radio" name="q74" value="c"> Denying all permissions by default</label>
+          <label><input type="radio" name="q74" value="d"> Assigning privileges randomly</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>75. HTTP operates on which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q75" value="a"> 443</label>
-    <label><input type="radio" name="q75" value="b"> 80</label>
-    <label><input type="radio" name="q75" value="c"> 389</label>
-    <label><input type="radio" name="q75" value="d"> 69</label>
-  </div>
-</li>
+      <!-- Q75 changed so it’s no longer a duplicate of Q33 -->
+      <li class="question" data-correct="a">
+        <p>75. In HTTP responses, which status code indicates a successful request (<strong>OK</strong>)?</p>
+        <div class="options">
+          <label><input type="radio" name="q75" value="a"> 200</label>
+          <label><input type="radio" name="q75" value="b"> 301</label>
+          <label><input type="radio" name="q75" value="c"> 404</label>
+          <label><input type="radio" name="q75" value="d"> 500</label>
+        </div>
+      </li>
 
-      
+      <li class="question" data-correct="c">
+        <p>76. TTPs describe:</p>
+        <div class="options">
+          <label><input type="radio" name="q76" value="a"> Only malware families</label>
+          <label><input type="radio" name="q76" value="b"> Encryption key structures</label>
+          <label><input type="radio" name="q76" value="c"> How attackers operate: their tactics, techniques, and procedures</label>
+          <label><input type="radio" name="q76" value="d"> IPSEC tunnel configs</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>76. TTPs describe:</p>
-  <div class="options">
-    <label><input type="radio" name="q76" value="a"> Only malware families</label>
-    <label><input type="radio" name="q76" value="b"> Encryption key structures</label>
-    <label><input type="radio" name="q76" value="c"> How attackers operate: their tactics, techniques, and procedures</label>
-    <label><input type="radio" name="q76" value="d"> IPSEC tunnel configs</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>77. Firewall logs help detect:</p>
+        <div class="options">
+          <label><input type="radio" name="q77" value="a"> Blocked inbound/outbound connections</label>
+          <label><input type="radio" name="q77" value="b"> Power supply failures</label>
+          <label><input type="radio" name="q77" value="c"> Thick-client crashes</label>
+          <label><input type="radio" name="q77" value="d"> User phishing complaints</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>77. Firewall logs help detect:</p>
-  <div class="options">
-    <label><input type="radio" name="q77" value="a"> Blocked inbound/outbound connections</label>
-    <label><input type="radio" name="q77" value="b"> Power supply failures</label>
-    <label><input type="radio" name="q77" value="c"> Thick-client crashes</label>
-    <label><input type="radio" name="q77" value="d"> User phishing complaints</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>78. The CIA triad stands for:</p>
+        <div class="options">
+          <label><input type="radio" name="q78" value="a"> Control, Inspection, Automation</label>
+          <label><input type="radio" name="q78" value="b"> Connection, Integrity, Access</label>
+          <label><input type="radio" name="q78" value="c"> Confidentiality, Investigation, Auditing</label>
+          <label><input type="radio" name="q78" value="d"> Confidentiality, Integrity, Availability</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>78. The CIA triad stands for:</p>
-  <div class="options">
-    <label><input type="radio" name="q78" value="a"> Control, Inspection, Automation</label>
-    <label><input type="radio" name="q78" value="b"> Connection, Integrity, Access</label>
-    <label><input type="radio" name="q78" value="c"> Confidentiality, Investigation, Auditing</label>
-    <label><input type="radio" name="q78" value="d"> Confidentiality, Integrity, Availability</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>79. Post-incident activities include:</p>
+        <div class="options">
+          <label><input type="radio" name="q79" value="a"> Designing a new SIEM</label>
+          <label><input type="radio" name="q79" value="b"> Conducting password resets</label>
+          <label><input type="radio" name="q79" value="c"> Lessons learned documentation</label>
+          <label><input type="radio" name="q79" value="d"> Running disaster recovery tests</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>79. Post-incident activities include:</p>
-  <div class="options">
-    <label><input type="radio" name="q79" value="a"> Designing a new SIEM</label>
-    <label><input type="radio" name="q79" value="b"> Conducting password resets</label>
-    <label><input type="radio" name="q79" value="c"> Lessons learned documentation</label>
-    <label><input type="radio" name="q79" value="d"> Running disaster recovery tests</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>80. IMAP commonly uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q80" value="a"> 25</label>
+          <label><input type="radio" name="q80" value="b"> 143</label>
+          <label><input type="radio" name="q80" value="c"> 53</label>
+          <label><input type="radio" name="q80" value="d"> 111</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>80. IMAP commonly uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q80" value="a"> 25</label>
-    <label><input type="radio" name="q80" value="b"> 143</label>
-    <label><input type="radio" name="q80" value="c"> 53</label>
-    <label><input type="radio" name="q80" value="d"> 111</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>81. Phishing emails often rely on:</p>
+        <div class="options">
+          <label><input type="radio" name="q81" value="a"> Social engineering and urgency</label>
+          <label><input type="radio" name="q81" value="b"> Malware-free attachments only</label>
+          <label><input type="radio" name="q81" value="c"> DNS misconfiguration</label>
+          <label><input type="radio" name="q81" value="d"> System resource usage</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>81. Phishing emails often rely on:</p>
-  <div class="options">
-    <label><input type="radio" name="q81" value="a"> Social engineering and urgency</label>
-    <label><input type="radio" name="q81" value="b"> Malware-free attachments only</label>
-    <label><input type="radio" name="q81" value="c"> DNS misconfiguration</label>
-    <label><input type="radio" name="q81" value="d"> System resource usage</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>82. Windows Event ID 4688 indicates:</p>
+        <div class="options">
+          <label><input type="radio" name="q82" value="a"> Network share access</label>
+          <label><input type="radio" name="q82" value="b"> Account disabled</label>
+          <label><input type="radio" name="q82" value="c"> A new process was created</label>
+          <label><input type="radio" name="q82" value="d"> DNS request logged</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>82. Windows Event ID 4688 indicates:</p>
-  <div class="options">
-    <label><input type="radio" name="q82" value="a"> Network share access</label>
-    <label><input type="radio" name="q82" value="b"> Account disabled</label>
-    <label><input type="radio" name="q82" value="c"> A new process was created</label>
-    <label><input type="radio" name="q82" value="d"> DNS request logged</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>83. A cyber risk is defined as:</p>
+        <div class="options">
+          <label><input type="radio" name="q83" value="a"> The existence of malware in the network</label>
+          <label><input type="radio" name="q83" value="b"> Likelihood × impact of a threat exploiting a vulnerability</label>
+          <label><input type="radio" name="q83" value="c"> A firewall misconfiguration</label>
+          <label><input type="radio" name="q83" value="d"> A failed login attempt</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>83. A cyber risk is defined as:</p>
-  <div class="options">
-    <label><input type="radio" name="q83" value="a"> The existence of malware in the network</label>
-    <label><input type="radio" name="q83" value="b"> Likelihood × impact of a threat exploiting a vulnerability</label>
-    <label><input type="radio" name="q83" value="c"> A firewall misconfiguration</label>
-    <label><input type="radio" name="q83" value="d"> A failed login attempt</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>84. A SOC L2 analyst is typically responsible for:</p>
+        <div class="options">
+          <label><input type="radio" name="q84" value="a"> Managing HR onboarding</label>
+          <label><input type="radio" name="q84" value="b"> Basic ticket triage</label>
+          <label><input type="radio" name="q84" value="c"> CI/CD pipeline maintenance</label>
+          <label><input type="radio" name="q84" value="d"> Deep investigations and escalation handling</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>84. A SOC L2 analyst is typically responsible for:</p>
-  <div class="options">
-    <label><input type="radio" name="q84" value="a"> Managing HR onboarding</label>
-    <label><input type="radio" name="q84" value="b"> Basic ticket triage</label>
-    <label><input type="radio" name="q84" value="c"> CI/CD pipeline maintenance</label>
-    <label><input type="radio" name="q84" value="d"> Deep investigations and escalation handling</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>85. POP3 commonly uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q85" value="a"> 110</label>
+          <label><input type="radio" name="q85" value="b"> 993</label>
+          <label><input type="radio" name="q85" value="c"> 143</label>
+          <label><input type="radio" name="q85" value="d"> 8081</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>85. POP3 commonly uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q85" value="a"> 110</label>
-    <label><input type="radio" name="q85" value="b"> 993</label>
-    <label><input type="radio" name="q85" value="c"> 143</label>
-    <label><input type="radio" name="q85" value="d"> 8081</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>86. A baseline in security monitoring helps analysts:</p>
+        <div class="options">
+          <label><input type="radio" name="q86" value="a"> Update operating systems</label>
+          <label><input type="radio" name="q86" value="b"> Replace firewall signatures</label>
+          <label><input type="radio" name="q86" value="c"> Understand what "normal" behavior looks like</label>
+          <label><input type="radio" name="q86" value="d"> Configure printers</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>86. A baseline in security monitoring helps analysts:</p>
-  <div class="options">
-    <label><input type="radio" name="q86" value="a"> Update operating systems</label>
-    <label><input type="radio" name="q86" value="b"> Replace firewall signatures</label>
-    <label><input type="radio" name="q86" value="c"> Understand what "normal" behavior looks like</label>
-    <label><input type="radio" name="q86" value="d"> Configure printers</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>87. A common indicator of brute-force activity is:</p>
+        <div class="options">
+          <label><input type="radio" name="q87" value="a"> Long, infrequent login attempts</label>
+          <label><input type="radio" name="q87" value="b"> Many rapid, repeated failed logins for a single account</label>
+          <label><input type="radio" name="q87" value="c"> Access from internal VIP accounts</label>
+          <label><input type="radio" name="q87" value="d"> DNS exfiltration patterns</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>87. A common indicator of brute-force activity is:</p>
-  <div class="options">
-    <label><input type="radio" name="q87" value="a"> Long, infrequent login attempts</label>
-    <label><input type="radio" name="q87" value="b"> Many rapid, repeated failed logins for a single account</label>
-    <label><input type="radio" name="q87" value="c"> Access from internal VIP accounts</label>
-    <label><input type="radio" name="q87" value="d"> DNS exfiltration patterns</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>88. Availability means:</p>
+        <div class="options">
+          <label><input type="radio" name="q88" value="a"> Data must always be encrypted</label>
+          <label><input type="radio" name="q88" value="b"> No one can access the system</label>
+          <label><input type="radio" name="q88" value="c"> Only admins can access data</label>
+          <label><input type="radio" name="q88" value="d"> Systems and data must be accessible when needed</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>88. Availability means:</p>
-  <div class="options">
-    <label><input type="radio" name="q88" value="a"> Data must always be encrypted</label>
-    <label><input type="radio" name="q88" value="b"> No one can access the system</label>
-    <label><input type="radio" name="q88" value="c"> Only admins can access data</label>
-    <label><input type="radio" name="q88" value="d"> Systems and data must be accessible when needed</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>89. Privilege escalation refers to:</p>
+        <div class="options">
+          <label><input type="radio" name="q89" value="a"> A user gaining higher access than intended</label>
+          <label><input type="radio" name="q89" value="b"> A firewall update</label>
+          <label><input type="radio" name="q89" value="c"> A DNS error</label>
+          <label><input type="radio" name="q89" value="d"> SIEM rule tuning</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>89. Privilege escalation refers to:</p>
-  <div class="options">
-    <label><input type="radio" name="q89" value="a"> A user gaining higher access than intended</label>
-    <label><input type="radio" name="q89" value="b"> A firewall update</label>
-    <label><input type="radio" name="q89" value="c"> A DNS error</label>
-    <label><input type="radio" name="q89" value="d"> SIEM rule tuning</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>90. A L3 SOC analyst typically handles:</p>
+        <div class="options">
+          <label><input type="radio" name="q90" value="a"> Shift scheduling</label>
+          <label><input type="radio" name="q90" value="b"> Basic detections</label>
+          <label><input type="radio" name="q90" value="c"> Advanced threat hunting and tuning detection logic</label>
+          <label><input type="radio" name="q90" value="d"> Email marketing issues</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>90. A L3 SOC analyst typically handles:</p>
-  <div class="options">
-    <label><input type="radio" name="q90" value="a"> Shift scheduling</label>
-    <label><input type="radio" name="q90" value="b"> Basic detections</label>
-    <label><input type="radio" name="q90" value="c"> Advanced threat hunting and tuning detection logic</label>
-    <label><input type="radio" name="q90" value="d"> Email marketing issues</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>91. HTTPS uses which port?</p>
+        <div class="options">
+          <label><input type="radio" name="q91" value="a"> 443</label>
+          <label><input type="radio" name="q91" value="b"> 587</label>
+          <label><input type="radio" name="q91" value="c"> 69</label>
+          <label><input type="radio" name="q91" value="d"> 161</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>91. HTTPS uses which port?</p>
-  <div class="options">
-    <label><input type="radio" name="q91" value="a"> 443</label>
-    <label><input type="radio" name="q91" value="b"> 587</label>
-    <label><input type="radio" name="q91" value="c"> 69</label>
-    <label><input type="radio" name="q91" value="d"> 161</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>92. A typical sign of malware persistence is:</p>
+        <div class="options">
+          <label><input type="radio" name="q92" value="a"> Random firewall popups</label>
+          <label><input type="radio" name="q92" value="b"> User account lockouts</label>
+          <label><input type="radio" name="q92" value="c"> Slow network performance</label>
+          <label><input type="radio" name="q92" value="d"> Registry or scheduled task modifications</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>92. A typical sign of malware persistence is:</p>
-  <div class="options">
-    <label><input type="radio" name="q92" value="a"> Random firewall popups</label>
-    <label><input type="radio" name="q92" value="b"> User account lockouts</label>
-    <label><input type="radio" name="q92" value="c"> Slow network performance</label>
-    <label><input type="radio" name="q92" value="d"> Registry or scheduled task modifications</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>93. A SIEM correlation rule triggers when:</p>
+        <div class="options">
+          <label><input type="radio" name="q93" value="a"> Multiple related events meet defined patterns</label>
+          <label><input type="radio" name="q93" value="b"> Storage is full</label>
+          <label><input type="radio" name="q93" value="c"> The analyst requests it manually</label>
+          <label><input type="radio" name="q93" value="d"> Any log is ingested</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>93. A SIEM correlation rule triggers when:</p>
-  <div class="options">
-    <label><input type="radio" name="q93" value="a"> Multiple related events meet defined patterns</label>
-    <label><input type="radio" name="q93" value="b"> Storage is full</label>
-    <label><input type="radio" name="q93" value="c"> The analyst requests it manually</label>
-    <label><input type="radio" name="q93" value="d"> Any log is ingested</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>94. Lateral movement typically aims to:</p>
+        <div class="options">
+          <label><input type="radio" name="q94" value="a"> Hide logs</label>
+          <label><input type="radio" name="q94" value="b"> Increase physical access</label>
+          <label><input type="radio" name="q94" value="c"> Move from one compromised host to others</label>
+          <label><input type="radio" name="q94" value="d"> Break encryption</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>94. Lateral movement typically aims to:</p>
-  <div class="options">
-    <label><input type="radio" name="q94" value="a"> Hide logs</label>
-    <label><input type="radio" name="q94" value="b"> Increase physical access</label>
-    <label><input type="radio" name="q94" value="c"> Move from one compromised host to others</label>
-    <label><input type="radio" name="q94" value="d"> Break encryption</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>95. A false positive in monitoring is when:</p>
+        <div class="options">
+          <label><input type="radio" name="q95" value="a"> Malware executes successfully</label>
+          <label><input type="radio" name="q95" value="b"> The SIEM alerts on benign activity</label>
+          <label><input type="radio" name="q95" value="c"> An IOC is confirmed malicious</label>
+          <label><input type="radio" name="q95" value="d"> The firewall blocks a virus</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>95. A false positive in monitoring is when:</p>
-  <div class="options">
-    <label><input type="radio" name="q95" value="a"> Malware executes successfully</label>
-    <label><input type="radio" name="q95" value="b"> The SIEM alerts on benign activity</label>
-    <label><input type="radio" name="q95" value="c"> An IOC is confirmed malicious</label>
-    <label><input type="radio" name="q95" value="d"> The firewall blocks a virus</label>
-  </div>
-</li>
+      <li class="question" data-correct="d">
+        <p>96. A Windows Event ID 4720 indicates:</p>
+        <div class="options">
+          <label><input type="radio" name="q96" value="a"> Group policy updated</label>
+          <label><input type="radio" name="q96" value="b"> Kerberos ticket issued</label>
+          <label><input type="radio" name="q96" value="c"> DNS lookup failure</label>
+          <label><input type="radio" name="q96" value="d"> A new user account was created</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="d">
-  <p>96. A Windows Event ID 4720 indicates:</p>
-  <div class="options">
-    <label><input type="radio" name="q96" value="a"> Group policy updated</label>
-    <label><input type="radio" name="q96" value="b"> Kerberos ticket issued</label>
-    <label><input type="radio" name="q96" value="c"> DNS lookup failure</label>
-    <label><input type="radio" name="q96" value="d"> A new user account was created</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>97. MITRE ATT&amp;CK is used for:</p>
+        <div class="options">
+          <label><input type="radio" name="q97" value="a"> Mapping attacker behaviors and techniques</label>
+          <label><input type="radio" name="q97" value="b"> Designing firewalls</label>
+          <label><input type="radio" name="q97" value="c"> Managing password policies</label>
+          <label><input type="radio" name="q97" value="d"> Building security dashboards</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>97. MITRE ATT&amp;CK is used for:</p>
-  <div class="options">
-    <label><input type="radio" name="q97" value="a"> Mapping attacker behaviors and techniques</label>
-    <label><input type="radio" name="q97" value="b"> Designing firewalls</label>
-    <label><input type="radio" name="q97" value="c"> Managing password policies</label>
-    <label><input type="radio" name="q97" value="d"> Building security dashboards</label>
-  </div>
-</li>
+      <li class="question" data-correct="c">
+        <p>98. A typical IOC for ransomware includes:</p>
+        <div class="options">
+          <label><input type="radio" name="q98" value="a"> A new Windows update</label>
+          <label><input type="radio" name="q98" value="b"> Kernel driver failure</label>
+          <label><input type="radio" name="q98" value="c"> Mass file renaming and encryption</label>
+          <label><input type="radio" name="q98" value="d"> Increased WiFi traffic</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="c">
-  <p>98. A typical IOC for ransomware includes:</p>
-  <div class="options">
-    <label><input type="radio" name="q98" value="a"> A new Windows update</label>
-    <label><input type="radio" name="q98" value="b"> Kernel driver failure</label>
-    <label><input type="radio" name="q98" value="c"> Mass file renaming and encryption</label>
-    <label><input type="radio" name="q98" value="d"> Increased WiFi traffic</label>
-  </div>
-</li>
+      <li class="question" data-correct="b">
+        <p>99. The "preparation" phase of IR includes:</p>
+        <div class="options">
+          <label><input type="radio" name="q99" value="a"> Resetting domain controllers</label>
+          <label><input type="radio" name="q99" value="b"> Ensuring tools, processes, and communication plans are ready</label>
+          <label><input type="radio" name="q99" value="c"> Running backups only</label>
+          <label><input type="radio" name="q99" value="d"> Notifying users</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="b">
-  <p>99. The "preparation" phase of IR includes:</p>
-  <div class="options">
-    <label><input type="radio" name="q99" value="a"> Resetting domain controllers</label>
-    <label><input type="radio" name="q99" value="b"> Ensuring tools, processes, and communication plans are ready</label>
-    <label><input type="radio" name="q99" value="c"> Running backups only</label>
-    <label><input type="radio" name="q99" value="d"> Notifying users</label>
-  </div>
-</li>
+      <li class="question" data-correct="a">
+        <p>100. A SOC L1 focuses mainly on:</p>
+        <div class="options">
+          <label><input type="radio" name="q100" value="a"> Initial triage and documentation</label>
+          <label><input type="radio" name="q100" value="b"> Creating new detection rules</label>
+          <label><input type="radio" name="q100" value="c"> Performing forensics imaging</label>
+          <label><input type="radio" name="q100" value="d"> Approving firewall purchases</label>
+        </div>
+      </li>
 
-<li class="question" data-correct="a">
-  <p>100. A SOC L1 focuses mainly on:</p>
-  <div class="options">
-    <label><input type="radio" name="q100" value="a"> Initial triage and documentation</label>
-    <label><input type="radio" name="q100" value="b"> Creating new detection rules</label>
-    <label><input type="radio" name="q100" value="c"> Performing forensics imaging</label>
-    <label><input type="radio" name="q100" value="d"> Approving firewall purchases</label>
-  </div>
-</li>
+      <!-- 101–150: New SOC questions -->
+      <div class="section-label">Cloud, Email, Threat Intel, Advanced SOC</div>
 
+      <li class="question" data-correct="b">
+        <p>101. In a cloud environment, which log source is most useful for tracking changes to resources and IAM activity?</p>
+        <div class="options">
+          <label><input type="radio" name="q101" value="a"> Hypervisor logs</label>
+          <label><input type="radio" name="q101" value="b"> Cloud audit logs (e.g. AWS CloudTrail, Azure Activity)</label>
+          <label><input type="radio" name="q101" value="c"> Printer logs</label>
+          <label><input type="radio" name="q101" value="d"> DNS cache on endpoints</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>102. In AWS, <strong>CloudTrail</strong> is primarily used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q102" value="a"> Scan S3 buckets for malware</label>
+          <label><input type="radio" name="q102" value="b"> Store container images</label>
+          <label><input type="radio" name="q102" value="c"> Record API calls and account activity for auditing</label>
+          <label><input type="radio" name="q102" value="d"> Monitor physical data centers</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>103. In Azure, suspicious sign-in activity is commonly found in:</p>
+        <div class="options">
+          <label><input type="radio" name="q103" value="a"> Azure AD sign-in logs</label>
+          <label><input type="radio" name="q103" value="b"> Azure Blob storage metadata</label>
+          <label><input type="radio" name="q103" value="c"> Office printer telemetry</label>
+          <label><input type="radio" name="q103" value="d"> NTP logs</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>104. A sudden spike of failed logins to a cloud console from many countries likely indicates:</p>
+        <div class="options">
+          <label><input type="radio" name="q104" value="a"> Normal roaming users</label>
+          <label><input type="radio" name="q104" value="b"> Backup jobs</label>
+          <label><input type="radio" name="q104" value="c"> Software updates</label>
+          <label><input type="radio" name="q104" value="d"> Credential stuffing or brute-force attempts</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>105. On Linux, authentication events are typically logged in:</p>
+        <div class="options">
+          <label><input type="radio" name="q105" value="a"> /var/log/dmesg</label>
+          <label><input type="radio" name="q105" value="b"> /var/log/cron</label>
+          <label><input type="radio" name="q105" value="c"> /var/log/auth.log or /var/log/secure</label>
+          <label><input type="radio" name="q105" value="d"> /etc/passwd</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>106. A Suricata or Snort rule firing on "ET TROJAN" usually means:</p>
+        <div class="options">
+          <label><input type="radio" name="q106" value="a"> A harmless configuration change</label>
+          <label><input type="radio" name="q106" value="b"> Network traffic matching known Trojan or malware patterns</label>
+          <label><input type="radio" name="q106" value="c"> A user changed their password</label>
+          <label><input type="radio" name="q106" value="d"> A printer went offline</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>107. <strong>Zeek</strong> (formerly Bro) is best described as:</p>
+        <div class="options">
+          <label><input type="radio" name="q107" value="a"> A network security monitoring and protocol analysis tool</label>
+          <label><input type="radio" name="q107" value="b"> A Windows log viewer</label>
+          <label><input type="radio" name="q107" value="c"> An email gateway</label>
+          <label><input type="radio" name="q107" value="d"> A password manager</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>108. When investigating a serious incident, a <strong>PCAP</strong> file is useful because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q108" value="a"> Stores only DNS queries</label>
+          <label><input type="radio" name="q108" value="b"> Contains only firewall events</label>
+          <label><input type="radio" name="q108" value="c"> Shows patching status</label>
+          <label><input type="radio" name="q108" value="d"> Captures full packet-level network traffic for deep analysis</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>109. In phishing investigations, the <code>Received:</code> headers in an email are primarily used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q109" value="a"> See attachment file types</label>
+          <label><input type="radio" name="q109" value="b"> Trace the path and original sending server</label>
+          <label><input type="radio" name="q109" value="c"> Display the user's mailbox size</label>
+          <label><input type="radio" name="q109" value="d"> Reset the sender's password</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>110. SPF, DKIM, and DMARC are mainly used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q110" value="a"> Encrypt files at rest</label>
+          <label><input type="radio" name="q110" value="b"> Configure VPN tunnels</label>
+          <label><input type="radio" name="q110" value="c"> Help authenticate email senders and reduce spoofing</label>
+          <label><input type="radio" name="q110" value="d"> Track browser history</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>111. A shortened URL (e.g. bit.ly link) in a phishing email is suspicious because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q111" value="a"> Hides the true destination domain from the user</label>
+          <label><input type="radio" name="q111" value="b"> Always indicates a DDoS attack</label>
+          <label><input type="radio" name="q111" value="c"> Breaks DNS entirely</label>
+          <label><input type="radio" name="q111" value="d"> Automatically installs malware</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>112. A URL containing long Base64-looking strings in query parameters may indicate:</p>
+        <div class="options">
+          <label><input type="radio" name="q112" value="a"> Routine browser caching</label>
+          <label><input type="radio" name="q112" value="b"> Harmless favicon downloads</label>
+          <label><input type="radio" name="q112" value="c"> Printer configuration</label>
+          <label><input type="radio" name="q112" value="d"> Possible obfuscation or data exfiltration</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>113. A PowerShell command line with <code>-EncodedCommand</code> is often suspicious because:</p>
+        <div class="options">
+          <label><input type="radio" name="q113" value="a"> It always updates Windows</label>
+          <label><input type="radio" name="q113" value="b"> Attackers use it to hide malicious scripts in Base64</label>
+          <label><input type="radio" name="q113" value="c"> It disables firewall logging</label>
+          <label><input type="radio" name="q113" value="d"> It resets all passwords</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>114. <strong>LOLBins</strong> (Living Off the Land Binaries) are:</p>
+        <div class="options">
+          <label><input type="radio" name="q114" value="a"> Dedicated malware tools</label>
+          <label><input type="radio" name="q114" value="b"> Only Linux-based binaries</label>
+          <label><input type="radio" name="q114" value="c"> Legitimate system binaries abused by attackers for malicious tasks</label>
+          <label><input type="radio" name="q114" value="d"> Firewall rule templates</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>115. "Living off the land" generally means attackers:</p>
+        <div class="options">
+          <label><input type="radio" name="q115" value="a"> Use built-in tools to avoid detection instead of dropping obvious malware</label>
+          <label><input type="radio" name="q115" value="b"> Only attack cloud environments</label>
+          <label><input type="radio" name="q115" value="c"> Only use phishing attachments</label>
+          <label><input type="radio" name="q115" value="d"> Destroy all logs immediately</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>116. Large outbound HTTPS uploads from a server that usually only receives traffic may suggest:</p>
+        <div class="options">
+          <label><input type="radio" name="q116" value="a"> Normal OS updates</label>
+          <label><input type="radio" name="q116" value="b"> NTP time sync</label>
+          <label><input type="radio" name="q116" value="c"> DNS misconfiguration</label>
+          <label><input type="radio" name="q116" value="d"> Possible data exfiltration over HTTPS</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>117. UEBA (User and Entity Behavior Analytics) focuses on:</p>
+        <div class="options">
+          <label><input type="radio" name="q117" value="a"> Data backup schedules</label>
+          <label><input type="radio" name="q117" value="b"> Detecting abnormal behavior of accounts and devices</label>
+          <label><input type="radio" name="q117" value="c"> Firewall firmware updates</label>
+          <label><input type="radio" name="q117" value="d"> Software license tracking</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>118. A <strong>playbook</strong> in a SOC usually describes:</p>
+        <div class="options">
+          <label><input type="radio" name="q118" value="a"> Detailed firewall rules</label>
+          <label><input type="radio" name="q118" value="b"> Backup power procedures</label>
+          <label><input type="radio" name="q118" value="c"> Step-by-step actions for responding to a particular alert type</label>
+          <label><input type="radio" name="q118" value="d"> Physical security patrol routes</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>119. A <strong>runbook</strong> is typically:</p>
+        <div class="options">
+          <label><input type="radio" name="q119" value="a"> A more detailed, technical version of a playbook for analysts to follow</label>
+          <label><input type="radio" name="q119" value="b"> A list of coffee orders</label>
+          <label><input type="radio" name="q119" value="c"> A set of budget requests</label>
+          <label><input type="radio" name="q119" value="d"> Marketing guidelines</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>120. <strong>Dwell time</strong> refers to:</p>
+        <div class="options">
+          <label><input type="radio" name="q120" value="a"> Time between password changes</label>
+          <label><input type="radio" name="q120" value="b"> Time it takes to patch systems</label>
+          <label><input type="radio" name="q120" value="c"> Time between log rotations</label>
+          <label><input type="radio" name="q120" value="d"> Time an attacker remains undetected in an environment</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>121. MTTD (Mean Time to Detect) measures:</p>
+        <div class="options">
+          <label><input type="radio" name="q121" value="a"> Average time to restore backups</label>
+          <label><input type="radio" name="q121" value="b"> Average time taken to detect an incident</label>
+          <label><input type="radio" name="q121" value="c"> Average SIEM storage usage</label>
+          <label><input type="radio" name="q121" value="d"> Average time to rotate logs</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>122. MTTR (Mean Time to Respond or Recover) is important because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q122" value="a"> Measures how fast passwords expire</label>
+          <label><input type="radio" name="q122" value="b"> Tracks firewall reboot time</label>
+          <label><input type="radio" name="q122" value="c"> Shows how quickly the team can contain and fix incidents</label>
+          <label><input type="radio" name="q122" value="d"> Indicates number of open ports</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>123. For a single compromised workstation, <strong>short-term containment</strong> might involve:</p>
+        <div class="options">
+          <label><input type="radio" name="q123" value="a"> Isolating it from the network</label>
+          <label><input type="radio" name="q123" value="b"> Powering off every server</label>
+          <label><input type="radio" name="q123" value="c"> Deleting all logs</label>
+          <label><input type="radio" name="q123" value="d"> Resetting all domain controllers immediately</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>124. A <strong>Golden Ticket</strong> attack targets which technology?</p>
+        <div class="options">
+          <label><input type="radio" name="q124" value="a"> SSL/TLS certificates</label>
+          <label><input type="radio" name="q124" value="b"> VPN tunnels</label>
+          <label><input type="radio" name="q124" value="c"> SQL databases</label>
+          <label><input type="radio" name="q124" value="d"> Kerberos authentication in Active Directory</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>125. <strong>Pass-the-Hash</strong> attacks primarily abuse:</p>
+        <div class="options">
+          <label><input type="radio" name="q125" value="a"> Plaintext passwords in browsers</label>
+          <label><input type="radio" name="q125" value="b"> NTLM password hashes</label>
+          <label><input type="radio" name="q125" value="c"> DNS TXT records</label>
+          <label><input type="radio" name="q125" value="d"> SSL private keys</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>126. On Windows, many rapid 4625 events followed by a single 4624 success for the same account might indicate:</p>
+        <div class="options">
+          <label><input type="radio" name="q126" value="a"> Normal password rotation</label>
+          <label><input type="radio" name="q126" value="b"> System patching</label>
+          <label><input type="radio" name="q126" value="c"> Successful brute-force login</label>
+          <label><input type="radio" name="q126" value="d"> DNS sinkholing</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>127. An effective account lockout policy helps reduce:</p>
+        <div class="options">
+          <label><input type="radio" name="q127" value="a"> Brute-force login attempts</label>
+          <label><input type="radio" name="q127" value="b"> Phishing volume</label>
+          <label><input type="radio" name="q127" value="c"> Firewall CPU usage</label>
+          <label><input type="radio" name="q127" value="d"> DNS traffic</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>128. The <strong>EICAR</strong> file is commonly used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q128" value="a"> Exploit SMB shares</label>
+          <label><input type="radio" name="q128" value="b"> Break TLS encryption</label>
+          <label><input type="radio" name="q128" value="c"> Test DNS tunneling</label>
+          <label><input type="radio" name="q128" value="d"> Safely test antivirus detection</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>129. A <strong>sandbox</strong> in malware analysis is:</p>
+        <div class="options">
+          <label><input type="radio" name="q129" value="a"> A log retention policy</label>
+          <label><input type="radio" name="q129" value="b"> An isolated environment to run and observe suspicious files</label>
+          <label><input type="radio" name="q129" value="c"> A VPN gateway</label>
+          <label><input type="radio" name="q129" value="d"> A password safe</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>130. A <strong>honeypot</strong> is used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q130" value="a"> Store encryption keys</label>
+          <label><input type="radio" name="q130" value="b"> Back up production servers</label>
+          <label><input type="radio" name="q130" value="c"> Attract and monitor attackers with a decoy system</label>
+          <label><input type="radio" name="q130" value="d"> Accelerate SIEM queries</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>131. <strong>Strategic</strong> threat intelligence usually focuses on:</p>
+        <div class="options">
+          <label><input type="radio" name="q131" value="a"> High-level trends, motives, and risks for leadership</label>
+          <label><input type="radio" name="q131" value="b"> Specific IP addresses and hashes only</label>
+          <label><input type="radio" name="q131" value="c"> Tactical firewall updates</label>
+          <label><input type="radio" name="q131" value="d"> Individual log lines</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>132. <strong>STIX/TAXII</strong> are standards used mainly for:</p>
+        <div class="options">
+          <label><input type="radio" name="q132" value="a"> VPN encryption</label>
+          <label><input type="radio" name="q132" value="b"> Backup compression</label>
+          <label><input type="radio" name="q132" value="c"> User authentication</label>
+          <label><input type="radio" name="q132" value="d"> Sharing structured threat intelligence between tools</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>133. CVSS scores are mainly used to:</p>
+        <div class="options">
+          <label><input type="radio" name="q133" value="a"> Measure SIEM performance</label>
+          <label><input type="radio" name="q133" value="b"> Prioritise vulnerabilities based on severity</label>
+          <label><input type="radio" name="q133" value="c"> Rate SOC analysts</label>
+          <label><input type="radio" name="q133" value="d"> Benchmark internet speed</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>134. A P1 (Priority 1) incident is often defined as:</p>
+        <div class="options">
+          <label><input type="radio" name="q134" value="a"> Low impact, no user effect</label>
+          <label><input type="radio" name="q134" value="b"> Only affecting test systems</label>
+          <label><input type="radio" name="q134" value="c"> High impact, critical business or safety impact requiring immediate response</label>
+          <label><input type="radio" name="q134" value="d"> Only a phishing simulation</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>135. Long log retention is important because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q135" value="a"> Supports investigations of slow, long-term attacks</label>
+          <label><input type="radio" name="q135" value="b"> Automatically blocks all malware</label>
+          <label><input type="radio" name="q135" value="c"> Reduces storage costs</label>
+          <label><input type="radio" name="q135" value="d"> Disables GDPR obligations</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>136. NTP logs with large unexpected time changes on servers might indicate:</p>
+        <div class="options">
+          <label><input type="radio" name="q136" value="a"> Routine patching</label>
+          <label><input type="radio" name="q136" value="b"> Disk failure</label>
+          <label><input type="radio" name="q136" value="c"> User password resets</label>
+          <label><input type="radio" name="q136" value="d"> Attempts to interfere with time-based security controls or logs</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>137. A VPN log showing many logins from different countries for the same user within minutes suggests:</p>
+        <div class="options">
+          <label><input type="radio" name="q137" value="a"> Normal travel</label>
+          <label><input type="radio" name="q137" value="b"> Possible account compromise or credential sharing</label>
+          <label><input type="radio" name="q137" value="c"> DNS poisoning</label>
+          <label><input type="radio" name="q137" value="d"> Server patching</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>138. <strong>Geo-velocity</strong> alerts are based on:</p>
+        <div class="options">
+          <label><input type="radio" name="q138" value="a"> CPU clock speed</label>
+          <label><input type="radio" name="q138" value="b"> DNS TTL values</label>
+          <label><input type="radio" name="q138" value="c"> Impossible or unlikely travel between login locations in a short time</label>
+          <label><input type="radio" name="q138" value="d"> Router bandwidth</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>139. A CASB (Cloud Access Security Broker) mainly helps to:</p>
+        <div class="options">
+          <label><input type="radio" name="q139" value="a"> Enforce security policies on cloud applications and users</label>
+          <label><input type="radio" name="q139" value="b"> Replace firewalls</label>
+          <label><input type="radio" name="q139" value="c"> Backup physical servers</label>
+          <label><input type="radio" name="q139" value="d"> Manage printer queues</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>140. Phishing awareness training is effective because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q140" value="a"> Eliminates all spam</label>
+          <label><input type="radio" name="q140" value="b"> Removes the need for email filters</label>
+          <label><input type="radio" name="q140" value="c"> Guarantees nobody will click links</label>
+          <label><input type="radio" name="q140" value="d"> Reduces the chance that users fall for social engineering</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>141. Maintaining <strong>chain of custody</strong> during evidence collection ensures:</p>
+        <div class="options">
+          <label><input type="radio" name="q141" value="a"> Faster SIEM queries</label>
+          <label><input type="radio" name="q141" value="b"> Evidence is properly documented, tracked, and defensible</label>
+          <label><input type="radio" name="q141" value="c"> All malware is quarantined</label>
+          <label><input type="radio" name="q141" value="d"> Logs are compressed</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>142. A <strong>snapshot</strong> of a VM is useful in incident response because it:</p>
+        <div class="options">
+          <label><input type="radio" name="q142" value="a"> Deletes malware</label>
+          <label><input type="radio" name="q142" value="b"> Rewrites the SIEM database</label>
+          <label><input type="radio" name="q142" value="c"> Captures the system state at a point in time for later analysis</label>
+          <label><input type="radio" name="q142" value="d"> Resets all user passwords</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>143. <strong>Shadow IT</strong> refers to:</p>
+        <div class="options">
+          <label><input type="radio" name="q143" value="a"> Unapproved systems or apps used without official IT oversight</label>
+          <label><input type="radio" name="q143" value="b"> Dark web forums</label>
+          <label><input type="radio" name="q143" value="c"> DMZ firewalls</label>
+          <label><input type="radio" name="q143" value="d"> Backup data centers</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>144. An <strong>insider threat</strong> could involve:</p>
+        <div class="options">
+          <label><input type="radio" name="q144" value="a"> Only external hackers</label>
+          <label><input type="radio" name="q144" value="b"> Only malware infections</label>
+          <label><input type="radio" name="q144" value="c"> Only accidental clicks</label>
+          <label><input type="radio" name="q144" value="d"> A trusted employee abusing access to steal or leak data</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>145. A <strong>Business Email Compromise (BEC)</strong> attack usually aims to:</p>
+        <div class="options">
+          <label><input type="radio" name="q145" value="a"> Encrypt all servers</label>
+          <label><input type="radio" name="q145" value="b"> Trick staff into sending money or sensitive information using fake executive emails</label>
+          <label><input type="radio" name="q145" value="c"> Flood the network with traffic</label>
+          <label><input type="radio" name="q145" value="d"> Exploit browsers</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>146. "MFA fatigue" attacks rely on:</p>
+        <div class="options">
+          <label><input type="radio" name="q146" value="a"> Password spraying</label>
+          <label><input type="radio" name="q146" value="b"> DNS poisoning</label>
+          <label><input type="radio" name="q146" value="c"> Spamming push-based MFA requests until the user approves one</label>
+          <label><input type="radio" name="q146" value="d"> Disabling SMS</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="a">
+        <p>147. A password manager helps security by:</p>
+        <div class="options">
+          <label><input type="radio" name="q147" value="a"> Encouraging long, unique passwords per site</label>
+          <label><input type="radio" name="q147" value="b"> Disabling MFA</label>
+          <label><input type="radio" name="q147" value="c"> Automatically opening all email attachments</label>
+          <label><input type="radio" name="q147" value="d"> Hiding network traffic</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="d">
+        <p>148. A <strong>Zero Trust</strong> approach assumes:</p>
+        <div class="options">
+          <label><input type="radio" name="q148" value="a"> Inside the network is always safe</label>
+          <label><input type="radio" name="q148" value="b"> Only endpoint AV matters</label>
+          <label><input type="radio" name="q148" value="c"> Firewalls are not needed</label>
+          <label><input type="radio" name="q148" value="d"> No implicit trust; verify explicitly every user, device, and request</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="b">
+        <p>149. <strong>Security misconfiguration</strong> as a risk usually means:</p>
+        <div class="options">
+          <label><input type="radio" name="q149" value="a"> Only missing cables</label>
+          <label><input type="radio" name="q149" value="b"> Incorrect or weak settings like default passwords, open S3 buckets, or exposed management ports</label>
+          <label><input type="radio" name="q149" value="c"> Perfect patching</label>
+          <label><input type="radio" name="q149" value="d"> Only phishing attacks</label>
+        </div>
+      </li>
+
+      <li class="question" data-correct="c">
+        <p>150. For an L1 SOC analyst, the <strong>most important daily habit</strong> is:</p>
+        <div class="options">
+          <label><input type="radio" name="q150" value="a"> Writing new malware</label>
+          <label><input type="radio" name="q150" value="b"> Ignoring low-severity alerts</label>
+          <label><input type="radio" name="q150" value="c"> Carefully triaging alerts, documenting findings, and learning from each case</label>
+          <label><input type="radio" name="q150" value="d"> Rebooting the SIEM every hour</label>
+        </div>
+      </li>
 
     </ol>
 
@@ -1183,7 +1678,57 @@
     </div>
   </div>
 
+  <!-- Confetti library for celebrations -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
   <script>
+    function launchConfettiFullScreen(colors) {
+      const duration = 2000;
+      const end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 7,
+          startVelocity: 35,
+          spread: 360,
+          ticks: 60,
+          origin: {
+            x: Math.random(),
+            y: Math.random() - 0.2
+          },
+          colors: colors
+        });
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }
+
+    function showCelebration(passed, baseText) {
+      const resultBox = document.getElementById("result");
+
+      if (passed) {
+        // PASS: congrats + wink + happy confetti
+        resultBox.innerHTML = `
+          <div style="padding:12px;font-size:16px;line-height:1.4;color:#1f6feb;">
+            ${baseText}<br/>
+            🎉 <strong>Congratulations!</strong> You passed! Keep practicing 😉
+          </div>
+        `;
+        launchConfettiFullScreen(); // default colourful
+      } else {
+        // FAIL: friendly, comforting, with fiery celebration
+        resultBox.innerHTML = `
+          <div style="padding:12px;font-size:16px;line-height:1.4;color:#cf222e;">
+            ${baseText}<br/>
+            🔥 <strong>Nice try!</strong> Even top SOC analysts whiff quizzes sometimes 😄<br/>
+            🔥🔥🔥 Let's kill the quiz again next round! 🔥🔥🔥
+          </div>
+        `;
+        launchConfettiFullScreen(['#ff4500', '#ff8c00', '#ff0000', '#ffd700']);
+      }
+    }
+
     document.getElementById("checkBtn").addEventListener("click", function () {
       const questions = document.querySelectorAll(".question");
       let correctCount = 0;
@@ -1198,19 +1743,26 @@
         if (checked) {
           answeredCount++;
           if (checked.value === correct) {
-            q.classList.add("correct");
             correctCount++;
+            q.classList.add("correct");
           } else {
             q.classList.add("incorrect");
           }
+        } else {
+          // unanswered stays neutral
         }
       });
 
       const total = questions.length;
-      const resultEl = document.getElementById("result");
-      resultEl.textContent =
-        "Score: " + correctCount + " / " + total +
-        (answeredCount < total ? "  (answered " + answeredCount + " of " + total + ")" : "");
+      const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+      const passed = percent >= 80; // pass mark
+
+      let baseText = `Score: ${correctCount}/${total} (${percent}%)`;
+      if (answeredCount < total) {
+        baseText += ` – you answered ${answeredCount} of ${total} questions.`;
+      }
+
+      showCelebration(passed, baseText);
     });
 
     document.getElementById("resetBtn").addEventListener("click", function () {
@@ -1219,11 +1771,12 @@
         q.classList.remove("correct", "incorrect");
         const name = "q" + (index + 1);
         const checked = q.querySelector('input[name="' + name + '"]:checked');
-        if (checked) checked.checked = false;
+        if (checked) {
+          checked.checked = false;
+        }
       });
-      document.getElementById("result").textContent = "";
+      document.getElementById("result").innerHTML = "";
     });
   </script>
 </body>
 </html>
-
